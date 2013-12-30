@@ -1,0 +1,50 @@
+body {
+  background: url(/img/background.png);
+}
+
+.coco-nav {
+  background: #333333;
+}
+
+a.coco-mobile-menu-title {
+  color: #fff;
+}
+
+.coco-menu-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+}
+
+aside.left-off-canvas-menu {
+  box-shadow: inset -10px 0 5px -5px rgba(0, 0, 0, .5);
+}
+
+ul.off-canvas-list li label {
+  background: transparent;
+  border-top: 0;
+}
+
+
+.coco-content-header {
+  background: #3e5a99;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.coco-content-header h1,
+.coco-content-header h3 {
+  color: #fff;
+}
+
+.coco-header-buttons {
+  margin-top: 15px;
+}
+
+.coco-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

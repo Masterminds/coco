@@ -1,0 +1,7 @@
+name: Chain of Command
+markdown: redcarpet
+
+chapters:
+- text: Introduction
+  url: /introduction/
+  check: /introduction/index.html

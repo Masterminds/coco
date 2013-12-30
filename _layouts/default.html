@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/foundation.css" />
+    <link rel="stylesheet" href="/css/coco.css" />
+    <script src="/js/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        <nav class="tab-bar show-for-small">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+          </section>
+          <section class="right tab-bar-section">
+            <a class="coco-mobile-menu-title" href="/">Chain of Command Pattern</a>
+          </section>
+        </nav>
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label class="first">Chain of Command Pattern</label></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+
+          <ul class="off-canvas-list">
+            <li><label class="first">Chapters</label></li>
+            {% for link in site.chapters %}
+              {% assign current = nil %}
+              {% if page.url == link.url or page.url == link.check or page.layout == link.layout %}
+                {% assign current = 'active' %}
+              {% endif %}
+
+              <li class="{{ current }}">
+                <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>     
+        </aside>
+
+        <nav class="top-bar hide-for-small" data-topbar>
+          <div class="coco-menu-wrapper">
+            <ul class="title-area">
+              <li class="name"><h1><a href="/">Chain of Command Pattern</a></h1></li> 
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <div class="top-bar-section"> <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="has-dropdown"> <a href="#">Chapters</a>
+                  <ul class="dropdown">
+                    {% for link in site.chapters %}
+                      {% assign current = nil %}
+                      {% if page.url == link.url or page.url == link.check or page.layout == link.layout %}
+                        {% assign current = 'active' %}
+                      {% endif %}
+
+                      <li class="{{ current }}">
+                        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li><a href="/about/">About</a></li>
+              </ul> <!-- Left Nav Section -->
+            </div>
+          </div>
+        </nav>
+              
+          {{ content }}
+
+        <footer class="row">
+          <div class="large-12 columns">
+            <hr>
+          </div>
+
+          <div class="medium-3 columns">
+            <p>Some license info.</p>
+          </div>
+
+          <div class="medium-9 columns">
+            <p class="right">Written by <a href="http://technosophos.com">Matt Butcher</a> (<a href="http://twitter.com/technosophos">@techosophos</a>) and <a href="http://mattfarina.com">Matt Farina</a> (<a href="http://twitter.com/mattfarina">@mattfarina</a>).</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
