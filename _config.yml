@@ -2,6 +2,18 @@ name: Chain of Command
 markdown: redcarpet
 
 chapters:
-- text: Introduction
+- text: "1. Introduction"
   url: /introduction/
   check: /introduction/index.html
+- text: "2. A Visual Guide to CoCo"
+  url: /visual-guide/
+  check: /visual-guide/index.html
+- text: "3. Building Re-usable Commands"
+  url: /reusable-commands/
+  check: /reusable-commands/index.html
+- text: "4. Building Chains"
+  url: /building-chains/
+  check: /building-chains/index.html
+- text: "5. A Quick Intro To CoCo Frameworks"
+  url: /frameworks/
+  check: /frameworks/index.html

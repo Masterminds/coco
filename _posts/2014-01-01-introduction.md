@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title:  "Chapter 1: Introduction"
+title:  "1. Introduction"
 permalink: /introduction/
 
 ---
